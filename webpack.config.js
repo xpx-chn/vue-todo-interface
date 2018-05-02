@@ -66,11 +66,11 @@ if (isDev) {
     config.devtool = '#cheap-module-eval-source-map';
     config.devServer = {
         port: '8888',
-        host: '0.0.0.0',
+        host: '127.0.0.1',
         overlay: {  // webpack编译出现错误，则显示到网页上
             errors: true,
         },
-        // open: true,
+        open: true,
 
         // 不刷新热加载数据
         hot: true
